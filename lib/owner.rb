@@ -18,6 +18,10 @@ class Owner
     @pets[:fishes] << Fish.new(name)
   end
 
+  def dog_fish(name)
+    @pets[:dog] << Dog.new(name)
+  end
+
   def walk_dogs
     @pets.collect do |species, instances|
       if species == :dogs
