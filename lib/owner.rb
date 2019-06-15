@@ -39,8 +39,8 @@ class Owner
   def play_with_cats
     @pets.collect do |species, instances|
       if species == :cats
-        instances.each do |dog|
-          dog.mood = "happy"
+        instances.each do |cat|
+          cat.mood = "happy"
       end
     end
   end
